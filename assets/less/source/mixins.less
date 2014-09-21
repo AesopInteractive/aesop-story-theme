@@ -1,8 +1,7 @@
-.font-size(@sizeValue) {
-    @remValue: @sizeValue;
-    @pxValue: (@sizeValue * 10);
-    font-size: ~"@{pxValue}px";
-    font-size: ~"@{remValue}rem";
+.x-rem (@property, @value) {
+    @px-fallback: @value * @font-size-base;
+    -: ~`(function () { return ';@{property}: @{px-fallback}'; }())`;
+    -: ~`(function () { return ';@{property}: @{value}rem'; }())`;
 }
 
 .clearfix() {
