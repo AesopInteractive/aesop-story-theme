@@ -1,5 +1,6 @@
+
 .x-rem (@property, @value) {
-    @px-fallback: @value * @font-size-base;
+    @px-fallback: @value * 10px;
     -: ~`(function () { return ';@{property}: @{px-fallback}'; }())`;
     -: ~`(function () { return ';@{property}: @{value}rem'; }())`;
 }

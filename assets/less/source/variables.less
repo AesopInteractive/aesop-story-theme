@@ -19,7 +19,7 @@
 
 @site-width:            900px;
 @body-bg:               #fafafa;
-@text-color:            #3e3e3e;
+@text-color:            #262626;
 
 // Links
 // -------------------------
@@ -30,12 +30,12 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Lato", sans-serif;
-@font-family-serif:       'Libre Baskerville', serif;
+@font-family-sans-serif:  Helvetica, arial , sans-serif;
+@font-family-serif:       Georgia, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-serif;
 
-@font-size-base:          18px; // 18px
+@font-size-base:          1.9;
 @font-size-large:         ceil(@font-size-base * 1.25);
 @font-size-small:         ceil(@font-size-base * 0.85);
 @font-size-xsmall:        0.8em; //14px;
@@ -47,7 +47,7 @@
 @font-size-h5:            @font-size-base;
 @font-size-h6:            0.707em;
 
-@line-height-base:        3;
+@line-height-base:        @font-size-base * 1.5;
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
