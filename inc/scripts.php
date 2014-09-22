@@ -10,7 +10,8 @@ class aesopStoryThemeScripts {
 
 	public function load_scripts(){
 
-		wp_enqueue_style('ast-style', get_stylesheet_directory_uri().'/style.css', AST_VERSION, true);
+		wp_enqueue_style('ast-style', get_stylesheet_directory_uri().'/assets/css/style.css', AST_VERSION, true);
+		wp_enqueue_script('ast-script', get_stylesheet_directory_uri().'/assets/js/ast.min.js', AST_VERSION, true);
 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		    wp_enqueue_script( 'comment-reply' );

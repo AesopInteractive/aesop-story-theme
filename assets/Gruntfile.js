@@ -27,7 +27,18 @@ module.exports = function(grunt) {
 		      "css/style.css": "less/style.less"
 		    }
 		  }
-		}
+		},
+		// concatenation and minification all in one
+   		uglify: {
+            plugins: {
+               	files: {
+                    'js/ast.min.js': [
+                    	'js/menu.js',
+                    	'js/general.js'
+                    ]
+                }
+            }
+        }
     });
 
     // register task
