@@ -21,7 +21,7 @@ class aesopStoryTheme{
 
 		// set theme width
 		if ( ! isset( $content_width ) ) {
-			$content_width = 700;
+			$content_width = 900;
 
 		}
 
@@ -35,6 +35,9 @@ class aesopStoryTheme{
 		add_theme_support( 'html5', array(
 			'search-form', 'comment-form', 'comment-list',
 		) );
+
+		// Add extended style support for aesop
+		add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );
 
 		// i18n
 		load_theme_textdomain( 'aesop-story-theme', AST_DIR. '/languages' );
