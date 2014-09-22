@@ -17,17 +17,17 @@
 	<body <?php body_class(); ?>>
 
 	<script>
-	jQuery(document).ready(function(){
-		jQuery('.ast-menu').find('ul:first-child').addClass('sm sm-clean');
-		jQuery('.ast-menu ul:first-child').smartmenus();
-
-	});
+		jQuery(document).ready(function(){
+			jQuery('.ast-menu').find('ul:first-child').addClass('sm sm-clean');
+			jQuery('ul:first-child, .ast-menu').smartmenus();
+		});
 	</script>
 	<header>
 		<?php
 			$args = array(
 				'theme_location' 	=> 'primary',
-				'container' 		=> false,
+				'container' 		=> 'nav',
+				'container_class'	=> 'ast-menu',
 				'menu_id' 			=> 'menu-main-nav',
 				'menu_class' 		=> 'ast-menu'
 			);
