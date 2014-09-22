@@ -1,3 +1,14 @@
 p {
     .x-rem( margin-bottom, @line-height-base );
 }
+
+blockquote {
+    .x-rem( padding-left, @line-height-base );
+    .x-rem( padding-right, @line-height-base );
+
+    p {
+        font-style: italic;
+        border-left:4px solid @link-color;
+        .x-rem( padding-left, @line-height-base );
+    }
+}
