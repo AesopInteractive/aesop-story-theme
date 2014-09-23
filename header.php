@@ -21,8 +21,33 @@
 			jQuery('.ast-menu').smartmenus();
 		});
 	</script>
-	<header>
-		<?php
+
+	<header id="ast-header" class="ast-header" itemscope itemtype="http://schema.org/WPHeader">
+
+		<div class="ast-brand-wrap">
+			<?php
+
+			$logo = get_theme_mod('aesop_story_theme_custom_logo');
+
+			if ( $logo ) { ?>
+
+				<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="novella-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
+
+			<?php } else { ?>
+
+				<h1 class="ast-site-title"><a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+
+				<?php if ( get_bloginfo('description') ) { ?>
+
+					<h2 class="ast-site-description"><?php echo get_bloginfo('description');?></h2>
+
+				<?php }
+			}
+			?>
+		</div>
+
+		<div class="ast-menu-wrap"><?php
+
 			$args = array(
 				'theme_location' 	=> 'primary',
 				'container' 		=> false,
@@ -31,5 +56,6 @@
 				'items_wrap'      => '<ul id="%1$s" class="%2$s ast-menu sm sm-clean">%3$s</ul>',
 			);
 			wp_nav_menu( $args );
-		?>
+
+		?></div>
 	</header>

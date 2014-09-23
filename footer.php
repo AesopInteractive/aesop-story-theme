@@ -1,5 +1,5 @@
 
-		<footer id="footer" itemscope itemtype="http://schema.org/WPFooter" class="ast-site-footer">
+		<footer id="ast-footer" itemscope itemtype="http://schema.org/WPFooter" class="ast-footer">
 
 			<div>
 				<?php wp_footer();?>
