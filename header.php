@@ -18,18 +18,17 @@
 
 	<script>
 		jQuery(document).ready(function(){
-			jQuery('.ast-menu').find('ul:first-child').addClass('sm sm-clean');
-			jQuery('ul:first-child, .ast-menu').smartmenus();
+			jQuery('.ast-menu').smartmenus();
 		});
 	</script>
 	<header>
 		<?php
 			$args = array(
 				'theme_location' 	=> 'primary',
-				'container' 		=> 'nav',
-				'container_class'	=> 'ast-menu',
+				'container' 		=> false,
 				'menu_id' 			=> 'menu-main-nav',
-				'menu_class' 		=> 'ast-menu'
+				'fallback_cb'		=> 'ast_fallback_menu',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s ast-menu sm sm-clean">%3$s</ul>',
 			);
 			wp_nav_menu( $args );
 		?>

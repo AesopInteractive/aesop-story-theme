@@ -11,6 +11,7 @@ class aesopStoryTheme{
 		define('AST_URL', get_stylesheet_directory_uri());
 
 		require_once(AST_DIR.'/inc/scripts.php' );
+		require_once(AST_DIR.'/inc/misc.php' );
 
 		add_action('after_setup_theme', array($this,'setup'));
 		add_filter('body_class', 		array($this,'body_class'));
