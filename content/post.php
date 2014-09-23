@@ -1,13 +1,16 @@
 <?php 
 
-	// get image source
-	$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'ast-post-cover');
+// get image source
+$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'ast-post-cover');
 
-	// inline style if post thumb is present
-	$style = has_post_thumbnail() ? sprintf('style="background:url(%s);background-size:cover;background-position:top center;"',$imgsrc[0]) : false;
+// inline style if post thumb is present
+$style = has_post_thumbnail() ? sprintf('style="background:url(%s);background-size:cover;background-position:top center;"',$imgsrc[0]) : false;
+
+// is post thumbnail set?
+$thumb_class = has_post_thumbnail() ? 'has-post-thumbnail' : 'no-post-thumbnail';
 
 do_action('ast_article_before');?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'class' => 'ast-article' ) );?> >
+<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'class' => 'ast-article '.$thumb_class ) );?> >
 	<header class="ast-entry-mast">
 
 		<div class="ast-entry-mast-inner-wrap">
