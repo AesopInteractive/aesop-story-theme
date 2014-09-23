@@ -14,7 +14,6 @@
     }
 
     img {
-        border-radius:50%;
         float:left;
         border:1px solid @baseContrast;
         .x-rem(padding,0.4);
@@ -27,8 +26,9 @@
     }
 
     .ast-entry-title {
-        margin:0.6rem 0 1rem;
-        font-size: 2rem;
+        .x-rem(margin-bottom,0.35);
+        .x-rem(font-size,2);
+        font-weight: bold;
 
         a {
             color:inherit;
@@ -37,9 +37,9 @@
 
     time,
     .ast-archive-post-author {
-        font-size: @font-size-xsmall;
+        .x-rem(font-size,1.5);
+        .x-rem(line-height,2);
         font-family: @font-family-sans-serif;
-        line-height: 2rem;
         display: block;
         margin:0;
         color:@text-color;

@@ -4,9 +4,9 @@
 
 			<?php 
 
-				$footertext = get_theme_mod('ast_footer_text','<p>Test</p>');
+				$footertext = get_theme_mod('ast_footer_text','<p>Aesop Story Theme via <a href="http://twitter.com/aesopinteractiv">@aesopinteractiv</a></p>');
 
-				if ($footertext) {
+				if ( $footertext ) {
 					echo $footertext;
 				} ?>
 			</div>
