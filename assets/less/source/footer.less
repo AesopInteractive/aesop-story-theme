@@ -1,0 +1,28 @@
+.ast-pagination {
+    .x-rem(margin-bottom,@line-height-base);
+
+    a {
+        color:@gray;
+        border:1px solid @baseContrast;
+        padding:4px 8px;
+        background:white;
+        border-radius:2px;
+        margin:0 4px;
+        .x-rem(font-size,@font-size-small);
+        font-family: @font-family-sans-serif;
+        .transition(all .15s ease);
+        &:hover {
+            text-decoration: none;
+            background: @link-color;
+            color:white;
+        }
+    }
+}
+
+.ast-footer-inner {
+    color:@gray;
+    font-family: @font-family-sans-serif;
+    .x-rem(font-size,@font-size-small);
+    .x-rem(padding-top,1);
+    border-top:1px solid @gray;
+}

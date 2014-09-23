@@ -2,8 +2,8 @@
 .ast-comments-wrap {
     position: relative;
     .ast-width;
-    .x-rem(padding-top,4);
-    .x-rem(padding-bottom,4);
+    .x-rem(padding-bottom,1);
+    border-top:@ast-border-style;
 
     code {
         display: block;
@@ -11,6 +11,10 @@
 
     .ast-comments-info {
         .x-rem(font-size,1.5);
+    }
+
+    #comment {
+        max-height: 140px;
     }
 }
 // threaded comments
