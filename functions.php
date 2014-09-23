@@ -41,6 +41,8 @@ class aesopStoryTheme{
 		// Add extended style support for aesop
 		add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );
 
+		add_theme_support( 'custom-background');
+
 		// i18n
 		load_theme_textdomain( 'aesop-story-theme', AST_DIR. '/languages' );
 
