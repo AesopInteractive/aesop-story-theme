@@ -1,5 +1,9 @@
 @media(max-width:@site-width) {
     .ast-header,
+    .ast-index-listing,
+    .ast-pagination,
+    .ast-footer-inner,
+    .ast-article.has-post-thumbnail .ast-entry-mast-inner,
     .ast-page > *:not(.aesop-component),
     .ast-entry > *:not(.aesop-component) {
         .x-rem( padding-left, @responsive-padding );
@@ -7,5 +11,8 @@
     }
     .ast-entry-mast .ast-entry-mast-inner-wrap .ast-entry-mast-inner {
         width:100%;
+    }
+    .ast-article.no-post-thumbnail .ast-entry-mast-inner-wrap .ast-entry-mast-inner{
+        width:90%;
     }
 }
