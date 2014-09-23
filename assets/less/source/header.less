@@ -1,13 +1,27 @@
 // logo wrap
 .ast-brand-wrap {
     .ast-width;
+    .x-rem(padding-top,2);
+    .x-rem(padding-bottom,2);
     position: relative;
 
+    h1,h2 {
+                font-family: @font-family-sans-serif;
+    }
+
     h1 {
-        .x-rem(margin-bottom, @line-height-base / 2);
+        .x-rem(font-size,2.5);
+        margin-bottom: 0;
+        font-weight:bold;
         a {
             color:@text-color;
         }
+    }
+
+    h2 {
+        .x-rem(font-size,2);
+        .x-rem(line-height,2);
+        margin-bottom: 0;
     }
 
 }
@@ -15,8 +29,8 @@
 // menu toggle button
 .ast-menu-toggle {
     color:@text-color;
-    position: fixed;
-    right:20px;
+    position: absolute;
+    right:0;
     top:20px;
     .transition(right .25s ease);
 }
@@ -40,6 +54,7 @@
     .transition(right .25s ease);
     .ast-menu {
         height:100%;
+        .box-shadow(inset 10px 0 10px -10px rgba(0,0,0,0.65));
     }
 }
 
@@ -54,9 +69,5 @@ body{
     .ast-menu-wrap {
         right:0;
         .transition(all .25s ease);
-    }
-    .ast-menu-toggle {
-        right:@menu-width + 20;
-        .transition(right .25s ease);
     }
 }
