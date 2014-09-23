@@ -15,9 +15,10 @@
 // menu toggle button
 .ast-menu-toggle {
     color:@text-color;
-    position: absolute;
-    right:0;
+    position: fixed;
+    right:20px;
     top:20px;
+    .transition(right .25s ease);
 }
 
 // off canvas menu
@@ -35,14 +36,19 @@
 }
 
 body{
-    .transition(padding-right .25s ease);
+    .transition(all .25s ease);
 }
 // menu open state
 .ast-menu-open {
-    padding-right:@menu-width;
-    .transition(padding-right .25s ease);
+    margin-left:-@menu-width;
+    margin-right:@menu-width;
+    right:@menu-width;
     .ast-menu-wrap {
         right:0;
         .transition(all .25s ease);
+    }
+    .ast-menu-toggle {
+        right:@menu-width + 20;
+        .transition(right .25s ease);
     }
 }
