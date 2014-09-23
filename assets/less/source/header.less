@@ -1,11 +1,7 @@
-.ast-header {
-    .x-rem(padding-top,2);
-    .x-rem(padding-bottom,2);
-    .x-rem(margin-bottom,2);
-}
-
+// logo wrap
 .ast-brand-wrap {
     .ast-width;
+    position: relative;
 
     h1 {
         .x-rem(margin-bottom, @line-height-base / 2);
@@ -14,4 +10,39 @@
         }
     }
 
+}
+
+// menu toggle button
+.ast-menu-toggle {
+    color:@text-color;
+    position: absolute;
+    right:0;
+    top:20px;
+}
+
+// off canvas menu
+.ast-menu-wrap {
+    position: fixed;
+    top:0;
+    bottom:0;
+    height:100%;
+    right:-@menu-width;
+    width:@menu-width;
+    .transition(right .25s ease);
+    .ast-menu {
+        height:100%;
+    }
+}
+
+body{
+    .transition(padding-right .25s ease);
+}
+// menu open state
+.ast-menu-open {
+    padding-right:@menu-width;
+    .transition(padding-right .25s ease);
+    .ast-menu-wrap {
+        right:0;
+        .transition(all .25s ease);
+    }
 }

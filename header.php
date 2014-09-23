@@ -44,6 +44,7 @@
 				<?php }
 			}
 			?>
+			<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i></a>
 		</div>
 
 		<div class="ast-menu-wrap"><?php
@@ -53,9 +54,10 @@
 				'container' 		=> false,
 				'menu_id' 			=> 'menu-main-nav',
 				'fallback_cb'		=> 'ast_fallback_menu',
-				'items_wrap'      => '<ul id="%1$s" class="%2$s ast-menu sm sm-clean">%3$s</ul>',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s ast-menu sm sm-clean sm-vertical">%3$s</ul>',
 			);
 			wp_nav_menu( $args );
 
 		?></div>
+
 	</header>
