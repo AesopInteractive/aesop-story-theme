@@ -2,7 +2,7 @@
 
 	var menutoggle = $('.ast-menu-toggle'),
 		menu       = $('.ast-menu-wrap'),
-		adminbar   = $('#wpadminbar'),
+		adminbar   = $('#wpadminbar').height(),
 		main 	   = $('main'),
 		body 	   = $('body');
 
