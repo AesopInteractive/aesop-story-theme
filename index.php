@@ -4,7 +4,7 @@
 
 	?><main class="ast-main">
 
-		<div class="ast-index-listing clearfix">
+		<div class="ast-index-listing ast-width clearfix">
 
 			<?php
 
