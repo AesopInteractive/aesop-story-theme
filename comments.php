@@ -20,7 +20,7 @@
 
 <!-- Comments -->
 <?php do_action('ast_before_comments');?>
-<div id="ast-comments-wrap" class="ast-comments-wrap">
+<div id="ast-comments-wrap" class="ast-comments-wrap ast-width">
 	<p class="ast-comments-info"><?php comments_number( ' ', '<span>1 Reply</span>', '<span>% Replies</span>' ); ?></p>
 	<div id="ast-comments" class="<?php echo $commentsClass;?>">
 
