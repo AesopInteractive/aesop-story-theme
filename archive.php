@@ -4,6 +4,8 @@
 
 	?><main class="ast-main">
 
+		<?php get_template_part( 'content/viewing' ); ?>
+
 		<div class="ast-index-listing ast-width clearfix ast-archive-listing">
 
 			<?php
