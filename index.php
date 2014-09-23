@@ -25,6 +25,8 @@
 			?>
 
 		</div>
+
+		<?php echo ast_get_pagination();?>
 	</main>
 
 <?php get_footer(); ?>
