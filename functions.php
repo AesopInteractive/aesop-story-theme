@@ -10,6 +10,7 @@ class aesopStoryTheme{
 		define('AST_DIR', get_stylesheet_directory());
 		define('AST_URL', get_stylesheet_directory_uri());
 
+		require_once(AST_DIR.'/inc/options.php' );
 		require_once(AST_DIR.'/inc/scripts.php' );
 		require_once(AST_DIR.'/inc/misc.php' );
 

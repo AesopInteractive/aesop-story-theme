@@ -31,7 +31,7 @@
 
 			if ( $logo ) { ?>
 
-				<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="novella-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
+				<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="ast-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
 
 			<?php } else { ?>
 
