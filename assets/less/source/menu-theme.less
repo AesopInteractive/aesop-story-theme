@@ -1,13 +1,9 @@
 .ast-menu {
     .ast-width;
-    text-align: center;
 
-    ul {
-        text-align: left;
-
-        li {
-            float: none;
-        }
+    .current-menu-item a,
+    .current_page_item a {
+        color:@link-color;
     }
 }
 /* Menu box
@@ -25,12 +21,6 @@
 		padding:5px 0;
 		background:#fff;
 		.box-shadow(0 5px 9px rgba(0,0,0,0.2));
-        text-align: left;
-
-        li {
-            
-            display: block;
-        }
 	}
 	/* first sub level carets */
 	.sm-clean > li > ul:before {
