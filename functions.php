@@ -44,6 +44,9 @@ class aesopStoryTheme{
 		// i18n
 		load_theme_textdomain( 'aesop-story-theme', AST_DIR. '/languages' );
 
+		//image size
+		add_image_size('ast-post-cover', 1200, 9999, array('center', 'center') );
+
 		if ( function_exists( 'register_nav_menus' ) ){
 			register_nav_menus(
 				array(

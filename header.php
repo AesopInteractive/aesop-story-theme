@@ -27,7 +27,7 @@
 		<div class="ast-brand-wrap">
 			<?php
 
-			$logo = get_theme_mod('aesop_story_theme_custom_logo');
+			$logo = get_theme_mod('ast_custom_logo');
 
 			if ( $logo ) { ?>
 

@@ -25,7 +25,7 @@ class astThemeCustomizer {
 	}
 
    	public static function live_preview() {
-      	wp_enqueue_script('ast-themecustomizer',AST_THEME_URL.'/assets/js/theme-customizer.js', array( 'jquery','customize-preview' ),	NOVELLA_THEME_VERSION, true);
+      	wp_enqueue_script('ast-themecustomizer',AST_URL.'/assets/js/theme-customizer.js', array( 'jquery','customize-preview' ),	AST_VERSION, true);
    	}
 
 }

@@ -1,7 +1,7 @@
 <?php 
 
 	// get image source
-	$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'novella-post-cover');
+	$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'ast-post-cover');
 
 	// inline style if post thumb is present
 	$style = has_post_thumbnail() ? sprintf('style="background:url(%s);background-size:cover;background-position:top center;"',$imgsrc[0]) : false;
