@@ -5,13 +5,21 @@ p {
 
 // blockquote
 blockquote {
-    .x-rem( padding-left, @line-height-base );
-    .x-rem( padding-right, @line-height-base );
 
     p {
         font-style: italic;
-        border-left:4px solid @link-color;
-        .x-rem( padding-left, @line-height-base );
+        position: relative;
+        .x-rem( padding-left, 7.5 );
+
+        &:before {
+            content:'\f122';
+            font-family: Dashicons;
+            position: absolute;
+            left: 0;
+            top:14px;
+            color:@link-color;
+            .x-rem(font-size,5);
+        }
     }
 }
 
