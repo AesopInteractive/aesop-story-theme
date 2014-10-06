@@ -5,7 +5,7 @@ class aesopStoryTheme{
 	function __construct(){
 
 			// Set some constants
-		define('AST_VERSION', '0.1');
+		define('AST_VERSION', '1.0');
 
 		define('AST_DIR', get_stylesheet_directory());
 		define('AST_URL', get_stylesheet_directory_uri());
@@ -16,6 +16,7 @@ class aesopStoryTheme{
 
 		add_action('after_setup_theme', array($this,'setup'));
 		add_filter('body_class', 		array($this,'body_class'));
+		add_action('init', 				array($this,'editor_styles'));
 
 	}
 
@@ -63,6 +64,11 @@ class aesopStoryTheme{
 
 		$classes[] = 'aesop-story-theme';
 		return $classes;
+	}
+
+	public function editor_styles(){
+
+		add_editor_style( 'editor-style.css' );
 	}
 }
 new aesopStoryTheme;

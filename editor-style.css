@@ -1,0 +1,11 @@
+@import 'assets/css/style.css';
+
+html .mceContentBody {
+    width:100%;
+    max-width:800px;
+	font-size: 20px;
+}
+
+html .mceContentBody a{
+	color:#8fb0bf;
+}
