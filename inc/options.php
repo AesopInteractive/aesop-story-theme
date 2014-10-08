@@ -20,6 +20,17 @@ class astThemeCustomizer {
 			'description' => __('Height of logo will be restricted to 40px.','aesop-story-theme')
 		) ) );
 
+		$wp_customize->add_setting( 'ast_footer_text', array(
+            'default'    =>  '<p>Aesop Story Theme via <a href="http://twitter.com/aesopinteractiv">@aesopinteractiv</a></p>',
+            'type'       => 'theme_mod',
+            'transport'  => 'postMessage'
+        ) );
+        $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ast_footer_text', array(
+            'label'    	=> __( 'Footer Text', 'aesop-story-theme' ),
+            'section'  	=> 'ast_appearence',
+            'settings' 	=> 'ast_footer_text'
+        ) ) );
+
 		$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 	}

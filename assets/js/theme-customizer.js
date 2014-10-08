@@ -7,4 +7,10 @@
 		});
 	});
 
+	wp.customize( 'ast_footer_text', function( value ) {
+	    value.bind( function( newval ) {
+	        $('.ast-footer-inner').html( newval );
+	    });
+	});
+
 })( jQuery );
