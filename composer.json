@@ -1,0 +1,9 @@
+{
+  "name": "aesop/aesop-story-theme",
+  "type": "wordpress-theme",
+  "description": "Aesop Core Theme",
+  "keywords": ["theme","wordpress","core","aesop"],
+  "require": {
+    "composer/installers": "~1.0.9"
+  }
+}
