@@ -2,7 +2,7 @@
 
 	get_header();
 
-	?><main class="ast-main">
+	?>
 
 		<div class="ast-index-listing ast-width clearfix">
 
@@ -27,6 +27,5 @@
 		</div>
 
 		<?php echo ast_get_pagination();?>
-	</main>
 
 <?php get_footer(); ?>

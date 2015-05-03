@@ -2,7 +2,7 @@
 
 	get_header();
 
-	?><main class="ast-main">
+	?>
 
 		<?php get_template_part( 'content/viewing' ); ?>
 
@@ -29,6 +29,6 @@
 		</div>
 
 		<?php echo ast_get_pagination();?>
-	</main>
+
 
 <?php get_footer(); ?>

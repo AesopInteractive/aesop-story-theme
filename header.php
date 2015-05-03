@@ -14,38 +14,9 @@
 
 	<?php do_action('aesop_theme_body_before'); // Aesop Universal Theme Hook ?>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
 
-	<script>
-		jQuery(document).ready(function(){
-			jQuery('.ast-menu').smartmenus();
-		});
-	</script>
-
-	<header id="ast-header" class="ast-header" itemscope itemtype="http://schema.org/WPHeader">
-
-		<div class="ast-brand-wrap">
-			<?php
-
-			$logo = get_theme_mod('ast_custom_logo');
-
-			if ( $logo ) { ?>
-
-				<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="ast-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
-
-			<?php } else { ?>
-
-				<h1 class="ast-site-title"><a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-
-				<?php if ( get_bloginfo('description') ) { ?>
-
-					<h2 class="ast-site-description"><?php echo get_bloginfo('description');?></h2>
-
-				<?php }
-			}
-			?>
-			<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i></a>
-		</div>
+	<div class="ast-site-wrapper">
 
 		<div class="ast-menu-wrap"><?php
 
@@ -60,4 +31,31 @@
 
 		?></div>
 
-	</header>
+		<main class="ast-site-main">
+
+			<header id="ast-header" class="ast-header" itemscope itemtype="http://schema.org/WPHeader">
+
+				<div class="ast-brand-wrap">
+					<?php
+
+					$logo = get_theme_mod('ast_custom_logo');
+
+					if ( $logo ) { ?>
+
+						<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="ast-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
+
+					<?php } else { ?>
+
+						<h1 class="ast-site-title"><a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+
+						<?php if ( get_bloginfo('description') ) { ?>
+
+							<h2 class="ast-site-description"><?php echo get_bloginfo('description');?></h2>
+
+						<?php }
+					}
+					?>
+					<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i></a>
+				</div>
+
+			</header>

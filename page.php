@@ -6,22 +6,18 @@
 
 	get_header();
 
-	?><main class="ast-page clearfix"><?php
+	if ( have_posts() ) :
 
-		if ( have_posts() ) :
+		while ( have_posts() ) : the_post();
 
-			while ( have_posts() ) : the_post();
+			get_template_part('content/page');
 
-				get_template_part('content/page');
+		endwhile;
 
-			endwhile;
+	else :
 
-		else :
+		get_template_part( 'content/none' );
 
-			get_template_part( 'content/none' );
+	endif;
 
-		endif;
-
-	?></main>
-
-<?php get_footer(); ?>
+get_footer();

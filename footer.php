@@ -1,21 +1,25 @@
 
-		<footer id="ast-footer" itemscope itemtype="http://schema.org/WPFooter" class="ast-footer">
-			<div class="ast-footer-inner ast-width">
+				<footer id="ast-footer" itemscope itemtype="http://schema.org/WPFooter" class="ast-footer">
+					<div class="ast-footer-inner ast-width">
 
-			<?php 
+					<?php 
 
-				$footertext = get_theme_mod('ast_footer_text','<p>Aesop Story Theme via <a href="http://twitter.com/aesopinteractiv">@aesopinteractiv</a></p>');
+						$footertext = get_theme_mod('ast_footer_text','<p>Aesop Story Theme via <a href="http://twitter.com/aesopinteractiv">@aesopinteractiv</a></p>');
 
-				if ( $footertext ) {
-					echo $footertext;
-				} ?>
-			</div>
+						if ( $footertext ) {
+							echo $footertext;
+						} ?>
+					</div>
 
-			<div>
-				<?php wp_footer();?>
-			</div>
+					<div>
+						<?php wp_footer();?>
+					</div>
 
-		</footer>
+				</footer>
+
+			</main>
+
+		</div>
 
 		<?php do_action('aesop_theme_body_inside_bottom'); // Aesop Universal Theme Hook ?>
 

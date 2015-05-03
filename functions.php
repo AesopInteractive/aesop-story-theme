@@ -23,16 +23,16 @@ class aesopStoryTheme{
 	function setup(){
 
 		// set theme width
-		if ( ! isset( $content_width ) ) {
-			$content_width = 900;
-
-		}
+	
+		$content_width = 900;
 
 		// Add RSS feed links to <head> for posts and comments.
 		add_theme_support( 'automatic-feed-links' );
 
 		// Enable support for Post Thumbnails, and declare two sizes.
 		add_theme_support( 'post-thumbnails' );
+
+		add_theme_support( 'title-tag' );
 
 		// Switch default core markup for search form, comment form, and comments
 		add_theme_support( 'html5', array(
