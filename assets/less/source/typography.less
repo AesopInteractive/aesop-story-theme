@@ -1,6 +1,11 @@
 // paragraph
 p {
     .x-rem( margin-bottom, @line-height-base );
+
+    &.lead {
+        .x-rem( font-size, @font-size-lead );
+        .x-rem(line-height, @line-height-base * 1.2);
+    }
 }
 
 
@@ -57,4 +62,41 @@ h5 {
 h6 {
     .x-rem( font-size, @font-size-h6 );
     .x-rem( line-height, @font-size-h6 );
+}
+
+
+// within an entry
+.ast-entry{
+
+    ul,ol {
+        padding-left:5px;
+        .x-rem( margin-bottom, @line-height-base * 1 );
+        li {
+            list-style-position: inside;
+        }
+    }
+
+    ul li { list-style-type: disc; }
+    ol li { list-style-type: decimal; }
+    .lasso-component--controls {
+        padding-left:0;
+        margin-bottom: 0;
+        li { list-style-type: none; line-height:16px; &:before {top:4px;} }
+    }
+
+    .lasso-b,
+    .aesop-b {
+        font-weight:bold;
+    }
+    .lasso-i,
+    .aesop-i {
+        font-style:italic;
+    }
+
+    code {
+        font-family: Monospace;
+        background:#eee;
+        padding:2px 7px 4px;
+        border-radius:2px;
+    }
 }
