@@ -18,7 +18,6 @@ do_action('ast_article_before');?>
 				<?php echo the_title('<h1 class="ast-entry-title">','</h1>');?>
 				<span class="ast-entry-author"><span><?php echo apply_filters('ast_story_by', __('by','aesop-story-theme'));?></span> <?php the_author();?></span>
 			</div>
-			<div class="aesop-entry-header ast-width"></div>
 		</div>
 
 		<?php if ( has_post_thumbnail() ) { ?>
