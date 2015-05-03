@@ -18,8 +18,6 @@
 
 	<div class="ast-site-wrapper">
 
-		<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i><span>Menu</span></a>
-
 		<div class="ast-menu-wrap"><?php
 
 			$args = array(
@@ -39,6 +37,8 @@
 			<header id="ast-header" class="ast-header" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div class="ast-header--inner">
+
+					<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i><span>Menu</span></a>
 
 					<div class="ast-brand-wrap">
 
