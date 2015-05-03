@@ -18,7 +18,8 @@
 
 	<div class="ast-site-wrapper">
 
-		<div class="ast-menu-wrap"><?php
+		<div class="ast-menu-wrap">
+			<?php
 
 			$args = array(
 				'theme_location' 	=> 'primary',
@@ -41,7 +42,6 @@
 					<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i><span>Menu</span></a>
 
 					<div class="ast-brand-wrap">
-
 
 						<?php
 

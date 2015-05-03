@@ -104,14 +104,20 @@
 // off canvas menu wrap
 .ast-menu-wrap {
     position: fixed;
-    top:0;
-    bottom:0;
-    height:100%;
-    left:-@menu-width;
-    width:@menu-width;
+    left:0;
+    right:0;
+    width:100%;
+    top:-@menu-width;
+    height:@menu-width;
     padding:@grid-gutter-width;
     background:black;
     .transition(.2s ease);
+
+    .ast-menu-toggle i,
+    .ast-menu-toggle span{
+        color:white;
+    }
+
 }
 // inner ul menu
 .ast-menu {
@@ -126,14 +132,14 @@
 .ast-menu-open {
 
     .ast-site-main {
-         -webkit-transform: translateX(@menu-width);
-             -moz-transform: translateX(@menu-width);
-              -ms-transform: translateX(@menu-width);
-               -o-transform: translateX(@menu-width);
-                  transform: translateX(@menu-width);
+         -webkit-transform: translateY(@menu-width);
+             -moz-transform: translateY(@menu-width);
+              -ms-transform: translateY(@menu-width);
+               -o-transform: translateY(@menu-width);
+                  transform: translateY(@menu-width);
     }
 
     .ast-menu-wrap {
-        left:0;
+        top:0;
     }
 }
