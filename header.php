@@ -18,6 +18,8 @@
 
 	<div class="ast-site-wrapper">
 
+		<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i><span>Menu</span></a>
+
 		<div class="ast-menu-wrap"><?php
 
 			$args = array(
@@ -29,33 +31,39 @@
 			);
 			wp_nav_menu( $args );
 
-		?></div>
+		?>
+		</div>
 
 		<main class="ast-site-main">
 
 			<header id="ast-header" class="ast-header" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div class="ast-brand-wrap">
-					<?php
+				<div class="ast-header--inner">
 
-					$logo = get_theme_mod('ast_custom_logo');
+					<div class="ast-brand-wrap">
 
-					if ( $logo ) { ?>
 
-						<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="ast-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
+						<?php
 
-					<?php } else { ?>
+						$logo = get_theme_mod('ast_custom_logo');
 
-						<h1 class="ast-site-title"><a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+						if ( $logo ) { ?>
 
-						<?php if ( get_bloginfo('description') ) { ?>
+							<a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><img class="ast-site-logo" src="<?php echo $logo;?>" alt="<?php echo bloginfo('title');?>"></a>
 
-							<h2 class="ast-site-description"><?php echo get_bloginfo('description');?></h2>
+						<?php } else { ?>
 
-						<?php }
-					}
-					?>
-					<a href="#" class="ast-menu-toggle"><i class="dashicons dashicons-menu"></i></a>
+							<h1 class="ast-site-title"><a itemprop="url" href="<?php echo esc_url( home_url() ); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+
+							<?php if ( get_bloginfo('description') ) { ?>
+
+								<h2 class="ast-site-description"><?php echo get_bloginfo('description');?></h2>
+
+							<?php }
+						}
+						?>
+					</div>
+
 				</div>
 
 			</header>
