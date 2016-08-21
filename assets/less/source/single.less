@@ -1,9 +1,23 @@
-.ast-page > *:not(.aesop-component),
+/*.ast-page > *:not(.aesop-component),
 .ast-entry > *:not(.aesop-component) {
     width: 100%;
     max-width: @site-width;
     margin-left: auto;
     margin-right: auto;
+}*/
+
+.ast-page,
+.ast-entry {
+    p,h1,h2,h3,h4,h5,h6, ol, ul ,table, dl {
+        .aesop-content;
+    }
+}
+// content width class
+.aesop-content{ 
+    width:100%;
+	max-width:@site-width;
+	margin-left:auto;
+	margin-right:auto; 
 }
 
 //
@@ -136,6 +150,7 @@
         .x-rem(font-size,@font-size-small);
         .x-rem(padding-left,2);
         position: relative;
+		clear:both;
 
         &:before {
             content:'\f318';
@@ -149,4 +164,11 @@
             color:@gray;
         }
     }
+}
+
+// chapter
+.aesop-article-chapter-wrap {
+    height: auto;
+    overflow: hidden;
+    clear: left;
 }

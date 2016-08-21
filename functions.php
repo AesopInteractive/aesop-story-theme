@@ -5,7 +5,7 @@ class aesopStoryTheme{
 	function __construct(){
 
 			// Set some constants
-		define('AST_VERSION', '1.0');
+		define('AST_VERSION', '1.1');
 
 		define('AST_DIR', get_stylesheet_directory());
 		define('AST_URL', get_stylesheet_directory_uri());
